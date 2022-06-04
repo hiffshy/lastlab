@@ -48,26 +48,16 @@
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
     </div>
+   
     <main class="content">
-        <h2 class="calculator__header">Задание 2: Калькулятор вкладов</h2>
-        <div class="calculator">
-            <div class="calculator__inputs">
-                <label for="type"></label><select class="select" id="type" >
-                <option value=" ">Вид вклада</option>
-                <option value="1">Пополняемый</option>
-                <option value="2">Срочный</option>
-            </select>
-
-                <label for="term"></label><select class="select" id="term">
-        
-            </select>
+        <div class="vacancies">
+            <h2>Вакансии HH.ru</h2>
+            <div class="inputs">
+                <input placeholder="Название вакансии" id="vacancyId">
+                <input placeholder="Количество" type="number" id="vacancy_amount">
             </div>
-            <input class="contribution__input" type="number" placeholder="Сумма вклада, руб" id="calculator__contribution">
-            <button class="contribution__button" id="calculate_button">Рассчитать</button>
-            <div class="calculator__text">
-                <p id="calculator__solution">Выберите вид вклада, срок и сумму</p>
-                <p id="calculator__solution2"></p>
-            </div>
+            <button id="load_vacancy">Загрузить вакансии</button>
+            <div id="vacancy"></div>
         </div>
     </main>
 
